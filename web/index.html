@@ -13,7 +13,6 @@
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/products.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -57,7 +56,86 @@
           <div class="col-md-1"><label for="ordenacao" class="form-label">Ordem</label><select id="ordenacao" class="form-select" aria-label="Ordenar produtos"><option value="destaque">★</option><option value="nome">A–Z</option><option value="preco">Preço</option></select></div>
         </div>
       </div>
-      <div class="row g-4" id="listaProdutos" aria-live="polite"></div>
+      <div class="row g-4" id="listaProdutos" aria-live="polite">
+        <article class="col-sm-6 col-lg-4 product-item" data-name="Guarda-Chuva de Bolso" data-category="Acessórios mágicos" data-rule="Cabe em um bolso">
+          <div class="card product-card h-100">
+            <div class="product-art" style="--art-bg:#eee7ff" aria-hidden="true"><span class="emoji">☂️</span></div>
+            <div class="card-body">
+              <p class="product-category mb-2">Acessórios mágicos</p>
+              <h3>Guarda-Chuva de Bolso</h3>
+              <p>Prevê exatamente onde a próxima gota de chuva vai cair.</p>
+              <span class="rule-chip mb-3">Cabe em um bolso</span>
+              <p class="price mt-auto">R$ 29,90</p>
+              <a class="btn btn-dark" href="produto.html?id=1">Ver invenção</a>
+            </div>
+          </div>
+        </article>
+        <article class="col-sm-6 col-lg-4 product-item" data-name="Estação Formiga Astronauta" data-category="Universo miniatura" data-rule="Serve em uma formiga">
+          <div class="card product-card h-100">
+            <div class="product-art" style="--art-bg:#e4f4e9" aria-hidden="true"><span class="emoji">🚀</span></div>
+            <div class="card-body">
+              <p class="product-category mb-2">Universo miniatura</p>
+              <h3>Estação Formiga Astronauta</h3>
+              <p>Um módulo espacial minúsculo para descanso entre viagens intergalácticas.</p>
+              <span class="rule-chip mb-3">Serve em uma formiga</span>
+              <p class="price mt-auto">R$ 89,90</p>
+              <a class="btn btn-dark" href="produto.html?id=2">Ver invenção</a>
+            </div>
+          </div>
+        </article>
+        <article class="col-sm-6 col-lg-4 product-item" data-name="Jardim Flutuante Colossal" data-category="Jardim cósmico" data-rule="Maior que um avião">
+          <div class="card product-card h-100">
+            <div class="product-art" style="--art-bg:#e4f4e9" aria-hidden="true"><span class="emoji">🪴</span></div>
+            <div class="card-body">
+              <p class="product-category mb-2">Jardim cósmico</p>
+              <h3>Jardim Flutuante Colossal</h3>
+              <p>Um jardim suspenso tão vasto que transforma o céu em paisagem.</p>
+              <span class="rule-chip mb-3">Maior que um avião</span>
+              <p class="price mt-auto">R$ 999.999,90</p>
+              <a class="btn btn-dark" href="produto.html?id=3">Ver invenção</a>
+            </div>
+          </div>
+        </article>
+        <article class="col-sm-6 col-lg-4 product-item" data-name="Zumbilume" data-category="Luzes impossíveis" data-rule="Começa com Z · Uso único">
+          <div class="card product-card h-100">
+            <div class="product-art" style="--art-bg:#ffeadc" aria-hidden="true"><span class="emoji">✨</span></div>
+            <div class="card-body">
+              <p class="product-category mb-2">Luzes impossíveis</p>
+              <h3>Zumbilume</h3>
+              <p>Uma pequena luz que ilumina um sonho uma única vez.</p>
+              <span class="rule-chip mb-3">Começa com Z · Uso único</span>
+              <p class="price mt-auto">R$ 19,90</p>
+              <a class="btn btn-dark" href="produto.html?id=4">Ver invenção</a>
+            </div>
+          </div>
+        </article>
+        <article class="col-sm-6 col-lg-4 product-item" data-name="Ampulheta de Minutos Extras" data-category="Acessórios mágicos" data-rule="Cabe em um bolso">
+          <div class="card product-card h-100">
+            <div class="product-art" style="--art-bg:#fff9e9" aria-hidden="true"><span class="emoji">⏳</span></div>
+            <div class="card-body">
+              <p class="product-category mb-2">Acessórios mágicos</p>
+              <h3>Ampulheta de Minutos Extras</h3>
+              <p>Guarda sete minutos extras para usar quando o dia parece curto.</p>
+              <span class="rule-chip mb-3">Cabe em um bolso</span>
+              <p class="price mt-auto">R$ 49,90</p>
+              <a class="btn btn-dark" href="produto.html?id=5">Ver invenção</a>
+            </div>
+          </div>
+        </article>
+        <article class="col-sm-6 col-lg-4 product-item" data-name="Nebulosa de Bolso" data-category="Universo miniatura" data-rule="Uso no espaço sideral">
+          <div class="card product-card h-100">
+            <div class="product-art" style="--art-bg:#eee7ff" aria-hidden="true"><span class="emoji">🌌</span></div>
+            <div class="card-body">
+              <p class="product-category mb-2">Universo miniatura</p>
+              <h3>Nebulosa de Bolso</h3>
+              <p>Uma nebulosa portátil para decorar a cabine de qualquer nave.</p>
+              <span class="rule-chip mb-3">Uso no espaço sideral</span>
+              <p class="price mt-auto">R$ 149,90</p>
+              <a class="btn btn-dark" href="produto.html?id=6">Ver invenção</a>
+            </div>
+          </div>
+        </article>
+      </div>
       <p id="mensagemFiltro" class="mt-4 text-secondary" role="status" aria-live="polite"></p>
     </section>
     <section class="about-section py-5" id="sobre" aria-labelledby="titulo-sobre"><div class="container about-inner"><div class="about-mark" aria-hidden="true">✧</div><div><p class="eyebrow">Nossa ideia</p><h2 id="titulo-sobre">Aqui, a imaginação é matéria-prima.</h2><p class="mb-0">A Impossibilândia é uma loja fictícia criada para provar que uma boa experiência digital pode vender até aquilo que desafia as leis do universo. Todos os preços e produtos são inventados para este projeto educacional.</p></div></div></section>
