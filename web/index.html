@@ -1,150 +1,68 @@
 <!doctype html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-    content="Loja Escola, projeto didático de front-end com HTML semântico, Bootstrap e JavaScript.">
-  <title>Loja Escola | Produtos</title>
+  <meta name="description" content="Na Impossibilândia, o impossível vira produto: descubra invenções fantásticas para o cotidiano e além dele.">
+  <meta property="og:title" content="Impossibilândia | Uma loja fora da realidade">
+  <meta property="og:description" content="Invenções extraordinárias para pessoas curiosas. Entre, explore e imagine.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#fff9e9">
+  <title>Impossibilândia | Uma loja fora da realidade</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
 </head>
-
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
-
   <header class="site-header">
     <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Loja Escola</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
-          aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="navbar-brand brand-link" href="index.html" aria-label="Impossibilândia — página inicial"><img class="brand-logo" src="img/logo.png" alt="Impossibilândia" width="330" height="132"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="menuPrincipal">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Produtos</a></li>
-            <li class="nav-item"><a class="nav-link" href="checkout.html">Finalizar compra</a></li>
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Vitrine</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Nossa ideia</a></li>
+            <li class="nav-item"><a class="nav-link" href="checkout.html">Sacola <span id="cartCount" class="cart-count" aria-label="Itens na sacola">0</span></a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-
   <main id="conteudo">
     <section class="hero py-5">
-      <div class="container">
-        <p class="eyebrow mb-2">Projeto didático de e-commerce</p>
-        <h1 class="display-5 fw-bold">Produtos simples para praticar um front-end de verdade.</h1>
-        <p class="lead col-lg-8">Explore os itens, visite a página de detalhes e siga um fluxo básico de compra. Algumas
-          partes foram deixadas propositalmente incompletas para serem melhoradas em aula.</p>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Uma loja fora da realidade</p>
+          <h1>O impossível também pode estar na sua <span class="highlight">sacola.</span></h1>
+          <p class="lead">Objetos que desafiam a lógica, resolvem problemas improváveis e deixam qualquer dia mais extraordinário.</p>
+          <a class="btn btn-dark btn-lg" href="#vitrine">Explorar invenções <span aria-hidden="true">↘</span></a>
+        </div>
+        <div class="hero-art" aria-label="Ilustração de uma sacola mágica cercada por estrelas" role="img"><span class="hero-star star-one">✦</span><span class="hero-bag">✦</span><span class="hero-orbit"></span><span class="hero-star star-two">✧</span><span class="hero-star star-three">✦</span></div>
       </div>
     </section>
-
-    <section class="container py-5" aria-labelledby="titulo-produtos">
-      <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
-        <div>
-          <h2 id="titulo-produtos">Produtos em destaque</h2>
-          <p class="text-secondary mb-0">Uma vitrine pequena, mas com bastante espaço para evoluir.</p>
-        </div>
-        <div class="product-filter">
-          <label for="filtroProduto" class="form-label">Filtrar produtos</label>
-          <input id="filtroProduto" class="form-control" type="search" placeholder="Ex.: caderno" autocomplete="off">
+    <section class="container py-5" id="vitrine" aria-labelledby="titulo-produtos">
+      <div class="section-heading">
+        <div><p class="eyebrow">Catálogo improvável</p><h2 id="titulo-produtos">Escolha sua próxima impossibilidade</h2><p class="text-secondary mb-0">Produtos fictícios, ideias gigantes e um pouquinho de magia.</p></div>
+      </div>
+      <div class="filters panel-soft mb-4">
+        <div class="row g-3 align-items-end">
+          <div class="col-md-5"><label for="filtroProduto" class="form-label">Buscar invenção</label><input id="filtroProduto" class="form-control" type="search" placeholder="Ex.: sonhos, bolso..." autocomplete="off"></div>
+          <div class="col-md-3"><label for="filtroCategoria" class="form-label">Categoria</label><select id="filtroCategoria" class="form-select"><option value="todas">Todas as categorias</option><option value="Acessórios mágicos">Acessórios mágicos</option><option value="Universo miniatura">Universo miniatura</option><option value="Jardim cósmico">Jardim cósmico</option><option value="Luzes impossíveis">Luzes impossíveis</option></select></div>
+          <div class="col-md-3"><label for="filtroRegra" class="form-label">Regra atendida</label><select id="filtroRegra" class="form-select"><option value="todas">Todas as regras</option><option value="bolso">Cabe em um bolso</option><option value="formiga">Serve em uma formiga</option><option value="espaco">Uso no espaço sideral</option><option value="aviao">Maior que um avião</option><option value="unico">Uso único</option><option value="z">Começa com Z</option></select></div>
+          <div class="col-md-1"><label for="ordenacao" class="form-label">Ordem</label><select id="ordenacao" class="form-select" aria-label="Ordenar produtos"><option value="destaque">★</option><option value="nome">A–Z</option><option value="preco">Preço</option></select></div>
         </div>
       </div>
-
-      <div class="row g-4" id="listaProdutos">
-        <article class="col-sm-6 col-lg-4 product-item" data-name="Mochila Horizonte">
-          <div class="card h-100 product-card">
-            <div class="product-illustration" aria-hidden="true">🎒</div>
-            <div class="card-body">
-              <p class="small text-secondary mb-1">Acessórios</p>
-              <h3 class="h5">Mochila Horizonte</h3>
-              <p>Mochila leve para estudo, trabalho e pequenas aventuras urbanas.</p>
-              <p class="price">R$ 189,90</p>
-              <a class="btn btn-dark" href="produto.html?id=1">Ver detalhes</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="col-sm-6 col-lg-4 product-item" data-name="Caderno Modular">
-          <div class="card h-100 product-card">
-            <div class="product-illustration" aria-hidden="true">📓</div>
-            <div class="card-body">
-              <p class="small text-secondary mb-1">Papelaria</p>
-              <h3 class="h5">Caderno Modular</h3>
-              <p>Caderno de capa dura com divisórias e páginas reposicionáveis.</p>
-              <p class="price">R$ 59,90</p>
-              <a class="btn btn-dark" href="produto.html?id=2">Ver detalhes</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="col-sm-6 col-lg-4 product-item" data-name="Garrafa Fluxo">
-          <div class="card h-100 product-card">
-            <div class="product-illustration" aria-hidden="true">🥤</div>
-            <div class="card-body">
-              <p class="small text-secondary mb-1">Utilidades</p>
-              <h3 class="h5">Garrafa Fluxo</h3>
-              <p>Garrafa reutilizável de 700 ml com marcador simples de consumo.</p>
-              <p class="price">R$ 74,50</p>
-              <a class="btn btn-dark" href="produto.html?id=3">Ver detalhes</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="col-sm-6 col-lg-4 product-item" data-name="Luminária Ponto">
-          <div class="card h-100 product-card">
-            <div class="product-illustration" aria-hidden="true">💡</div>
-            <div class="card-body">
-              <p class="small text-secondary mb-1">Casa</p>
-              <h3 class="h5">Luminária Ponto</h3>
-              <p>Luminária compacta para mesa com três níveis de intensidade.</p>
-              <p class="price">R$ 129,00</p>
-              <a class="btn btn-dark" href="produto.html?id=4">Ver detalhes</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="col-sm-6 col-lg-4 product-item" data-name="Fone Nuvem">
-          <div class="card h-100 product-card">
-            <div class="product-illustration" aria-hidden="true">🎧</div>
-            <div class="card-body">
-              <p class="small text-secondary mb-1">Tecnologia</p>
-              <h3 class="h5">Fone Nuvem</h3>
-              <p>Fone sem fio básico para música, estudo e chamadas do dia a dia.</p>
-              <p class="price">R$ 149,90</p>
-              <a class="btn btn-dark" href="produto.html?id=5">Ver detalhes</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="col-sm-6 col-lg-4 product-item" data-name="Estojo Pixel">
-          <div class="card h-100 product-card">
-            <div class="product-illustration" aria-hidden="true">✏️</div>
-            <div class="card-body">
-              <p class="small text-secondary mb-1">Papelaria</p>
-              <h3 class="h5">Estojo Pixel</h3>
-              <p>Estojo pequeno para organizar cabos, canetas e acessórios.</p>
-              <p class="price">R$ 39,90</p>
-              <a class="btn btn-dark" href="produto.html?id=6">Ver detalhes</a>
-            </div>
-          </div>
-        </article>
-      </div>
-      <p id="mensagemFiltro" class="mt-4" role="status" aria-live="polite"></p>
+      <div class="row g-4" id="listaProdutos" aria-live="polite"></div>
+      <p id="mensagemFiltro" class="mt-4 text-secondary" role="status" aria-live="polite"></p>
     </section>
+    <section class="about-section py-5" id="sobre" aria-labelledby="titulo-sobre"><div class="container about-inner"><div class="about-mark" aria-hidden="true">✧</div><div><p class="eyebrow">Nossa ideia</p><h2 id="titulo-sobre">Aqui, a imaginação é matéria-prima.</h2><p class="mb-0">A Impossibilândia é uma loja fictícia criada para provar que uma boa experiência digital pode vender até aquilo que desafia as leis do universo. Todos os preços e produtos são inventados para este projeto educacional.</p></div></div></section>
   </main>
-
-  <footer class="site-footer py-4">
-    <div class="container">
-      <p class="mb-0">Loja Escola · Projeto educacional para prática de front-end.</p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
+  <footer class="site-footer py-4"><div class="container footer-inner"><a href="index.html" class="footer-brand">Impossibilândia <span aria-hidden="true">✦</span></a><p class="mb-0">Uma loja fictícia para ideias extraordinárias. Projeto educacional — sem vendas reais.</p></div></footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 </body>
-
 </html>

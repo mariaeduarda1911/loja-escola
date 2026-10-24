@@ -1,70 +1,17 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Detalhes de um produto da Loja Escola.">
-  <title>Loja Escola | Detalhes do produto</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conheça os detalhes da invenção escolhida na Impossibilândia.">
+  <meta property="og:title" content="Detalhes da invenção | Impossibilândia"><meta property="og:description" content="Descubra como funciona sua próxima impossibilidade."><meta property="og:type" content="product">
+  <meta name="theme-color" content="#fff9e9"><title>Detalhes da invenção | Impossibilândia</title>
+  <link rel="icon" type="image/png" href="img/favicon.png"><link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="css/styles.css">
+  <script src="js/products.js" defer></script>
+  <script src="js/product.js" defer></script>
 </head>
-<body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
-  <header class="site-header">
-    <nav class="navbar" aria-label="Navegação principal">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="index.html">Loja Escola</a>
-        <a class="nav-link" href="index.html">Produtos</a>
-      </div>
-    </nav>
-  </header>
-
-  <main id="conteudo" class="container py-5">
-    <nav aria-label="Caminho de navegação">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Produtos</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Mochila Horizonte</li>
-      </ol>
-    </nav>
-
-    <article class="row g-5 align-items-start">
-      <div class="col-lg-6">
-        <div class="product-detail-illustration" role="img" aria-label="Ilustração de uma mochila">🎒</div>
-      </div>
-      <div class="col-lg-6">
-        <p class="eyebrow">Acessórios</p>
-        <h1>Mochila Horizonte</h1>
-        <p class="lead">Uma mochila compacta para quem carrega notebook, caderno, carregador e mais algumas pequenas histórias.</p>
-        <p class="price price-large">R$ 189,90</p>
-
-        <section aria-labelledby="titulo-detalhes" class="mb-4">
-          <h2 id="titulo-detalhes" class="h4">Detalhes</h2>
-          <ul>
-            <li>Compartimento para notebook de até 15 polegadas;</li>
-            <li>Dois bolsos externos;</li>
-            <li>Alças ajustáveis;</li>
-            <li>Material resistente à água.</li>
-          </ul>
-        </section>
-
-        <form id="formProduto">
-          <div class="mb-3">
-            <label for="quantidade" class="form-label">Quantidade</label>
-            <input class="form-control quantity-field" id="quantidade" name="quantidade" type="number" min="1" max="10" value="1">
-          </div>
-          <button class="btn btn-dark btn-lg" type="submit">Comprar agora</button>
-        </form>
-        <div id="produtoFeedback" class="mt-3" role="status" aria-live="polite"></div>
-      </div>
-    </article>
-
-    <aside class="learning-note mt-5">
-      <h2 class="h5">Nota para investigação</h2>
-      <p class="mb-0">Os links da vitrine carregam um <code>id</code> na URL, mas esta página ainda não usa esse valor. Isso é intencional.</p>
-    </aside>
-  </main>
-
-  <footer class="site-footer py-4"><div class="container"><p class="mb-0">Loja Escola · Projeto educacional.</p></div></footer>
-  <script src="js/product.js"></script>
-</body>
-</html>
+<body><a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+<header class="site-header"><nav class="navbar" aria-label="Navegação principal"><div class="container"><a class="navbar-brand brand-link" href="index.html"><img class="brand-logo" src="img/logo.png" alt="Impossibilândia — página inicial" width="270" height="108"></a><a class="nav-link" href="index.html">← Voltar à vitrine</a><a class="nav-link" href="checkout.html">Sacola <span id="cartCount" class="cart-count">0</span></a></div></nav></header>
+<main id="conteudo" class="container py-5"><nav aria-label="Caminho de navegação"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="index.html">Vitrine</a></li><li class="breadcrumb-item active" aria-current="page">Detalhes da invenção</li></ol></nav><div id="produtoDetalhe"><p role="status">Carregando invenção...</p></div><div id="produtoFeedback" class="mt-3" role="status" aria-live="polite"></div></main>
+<footer class="site-footer py-4"><div class="container footer-inner"><a href="index.html" class="footer-brand">Impossibilândia <span aria-hidden="true">✦</span></a><p class="mb-0">Produtos imaginários. Experiência real de front-end.</p></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script></body></html>
