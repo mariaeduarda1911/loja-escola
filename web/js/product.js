@@ -22,7 +22,7 @@ const produtos = [
         preco: 89.90,
         descricao: "Um módulo espacial minúsculo para descanso entre viagens intergalácticas.",
         regra: "Serve em uma formiga",
-        emoji: "🚀",
+        imagem: "img/estacao.png",
         detalhes: [
             "Estrutura adaptada ao tamanho de uma formiga.",
             "Possui estação de descanso e abastecimento.",
