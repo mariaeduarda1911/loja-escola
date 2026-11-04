@@ -37,7 +37,7 @@ const produtos = [
         preco: 999999.90,
         descricao: "Um jardim suspenso tão vasto que transforma o céu em paisagem.",
         regra: "Maior que um avião",
-        emoji: "🪴",
+        imagem: "img/jardim.png",
         detalhes: [
             "Dimensões maiores que um avião comercial.",
             "Possui árvores, flores e pequenos lagos.",
@@ -52,7 +52,7 @@ const produtos = [
         preco: 19.90,
         descricao: "Uma pequena luz que ilumina um sonho uma única vez.",
         regra: "Começa com Z · Uso único",
-        emoji: "✨",
+        imagem: "img/zumbilume.png",
         detalhes: [
             "Pequeno objeto luminoso.",
             "Ilumina um sonho durante uma noite.",
@@ -67,7 +67,7 @@ const produtos = [
         preco: 49.90,
         descricao: "Guarda sete minutos extras para usar quando o dia parece curto.",
         regra: "Cabe em um bolso",
-        emoji: "⏳",
+        imagem: "img/ampulheta.png",
         detalhes: [
             "Tamanho compacto e portátil.",
             "Armazena sete minutos extras.",
