@@ -77,7 +77,7 @@ const produtos = [
     },
     {
         id: 6,
-        nome: "Nebulosa de Bolso",
+        nome: "Nebulosa para Naves",
         categoria: "Universo miniatura",
         preco: 149.90,
         descricao: "Uma nebulosa portátil para decorar a cabine de qualquer nave.",

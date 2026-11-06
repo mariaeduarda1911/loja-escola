@@ -210,3 +210,36 @@ Vocês podem pesquisar documentação, exemplos e referências e podem conversar
 > O que este código faz, por que ele está aqui e como sabemos que funciona?
 
 Divirtam-se com a ideia. Quanto mais estranha for a loja, mais importante será tornar sua interface clara, consistente e agradável de usar.
+
+## Melhorias Realizadas 
+Atualizem este README com uma seção chamada Melhorias realizadas. Nela, apresentem:
+
+- nome e conceito da loja:
+Impossibilândia, a loja que proporciona produtos impossíveis.
+
+- lista dos produtos e a regra atendida por cada um;
+Guarda-chuva de bolso: Cabe em um bolso;
+Estação formiga astronauta: Serve em uma formiga;
+Jardim flutuante colossal: Maior que um avião;
+Zumbilume: Começa com Z e uso único;
+Ampulheta de minutos extras: Cabe em um bolso;
+Nebulosa de bolso: Uso no espaço sideral.
+
+principais mudanças de HTML, CSS e JavaScript:
+A principal mudança no HTML foi na estrutura geral das páginas, com a criação de cabeçalhos, seções hero e uma melhor organização dos conteúdos.
+No CSS, foram realizadas melhorias na identidade visual do site, com ajustes de cores, fontes, espaçamentos, botões e responsividade.
+No JavaScript, foram implementadas funcionalidades e interações, como o funcionamento da sacola de compras, cadastro de dados e exibição das informações na página de confirmação.
+
+APIs utilizadas:
+ViaCEP.
+
+testes realizados:
+Envio de formulário vazio;
+Envio de formulário com alguns campos vazios;
+CEP existente;
+CEP inexistente;
+CEP incompleto;
+Acessar a página de sucesso sem concluir o fluxo.
+
+dificuldades encontradas e como foram resolvidas:
+Tive dificuldade principalmente com o JavaScript, porque algumas partes do código não funcionavam como eu esperava. Para resolver, fui testando, procurando onde estavam os erros e pesquisando sobre o que eu precisava fazer. Com isso, consegui entender melhor o código e corrigir os problemas que apareceram.
