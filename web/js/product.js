@@ -82,7 +82,7 @@ const produtos = [
         preco: 149.90,
         descricao: "Uma nebulosa portátil para decorar a cabine de qualquer nave.",
         regra: "Uso no espaço sideral",
-        emoji: "🌌",
+        imagem: "img/nebulosa.png",
         detalhes: [
             "Contém uma pequena nebulosa em miniatura.",
             "Pode ser transportada dentro de uma nave.",
